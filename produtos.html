@@ -1,0 +1,131 @@
+<section class="section-3">
+    <header>
+        <nav id="nav" class="navbar">
+
+            <!-- <button id="btn-mobile"><img id="btn-mobile" src="assets/images/hamburguer.svg" alt="" srcset=""></button> -->
+            <img id="btn-mobile" src="assets/images/hamburguer.svg" alt="" srcset="">
+
+            <ul id="menu">
+                <li>
+                    <a href="/">
+                        Home
+                        <img src="assets/images/icons-tools/casa.svg" alt="" srcset="">
+                    </a>
+                </li>
+                <li>
+                    <a href="./produtos.html">
+                        Produtos
+                        <img src="assets/images/icons-tools/drone.svg" alt="" srcset="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>
+        <br>
+        Produtos
+        <br>
+    </h2>
+
+    <div class="grid">
+        <link rel="stylesheet" href="style/head.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/section-1.css">
+        <link rel="stylesheet" href="style/section-2.css">
+        <link rel="stylesheet" href="style/section-3.css">
+        <link rel="stylesheet" href="style/hamburguer.css">
+        <link rel="stylesheet" href="style/particles.css">
+
+        <div class="item-grid">
+            <img src="https://www.hypeness.com.br/1/2019/10/MAPFRE_Drones_3.jpg" alt="" srcset="">
+            <h3 class="gd-pink-1">Drone 1</h3>
+            <p>descriçao drone 1</p>
+            <a target="_blank" href="./">
+                <button class="button-ver">Comprar</button>
+            </a>
+            <ul>
+            </ul>
+        </div>
+
+        <div class="item-grid">
+            <img src="https://www.hypeness.com.br/1/2019/10/MAPFRE_Drones_3.jpg" alt="" srcset="">
+            <h3 class="gd-pink-1">DRONE 2</h3>
+            <p>DESC DRONE 2</p>
+            <a target="_blank" href="./">
+                <button class="button-ver">Comprar</button>
+            </a>
+            <ul>
+            </ul>
+        </div>
+
+        <div class="item-grid">
+            <img src="https://www.hypeness.com.br/1/2019/10/MAPFRE_Drones_3.jpg" alt="" srcset="">
+            <h3 class="gd-pink-1">DRONE 3</h3>
+            <p>DESCRIÇAO DRONE 3</p>
+            <a target="_blank" href="./">
+                <button class="button-ver">Comprar</button>
+            </a>
+            <ul>
+            </ul>
+        </div>
+        <div class="item-grid">
+            <img src="https://www.hypeness.com.br/1/2019/10/MAPFRE_Drones_3.jpg" alt="" srcset="">
+            <h3 class="gd-pink-1">DRONE 4</h3>
+            <p>DESCRIÇAO DRONE 4</p>
+            <a target="_blank" href="./">
+                <button class="button-ver">Comprar</button>
+            </a>
+            <ul>
+            </ul>
+        </div>
+        <div class="item-grid">
+            <img src="https://www.hypeness.com.br/1/2019/10/MAPFRE_Drones_3.jpg" alt="" srcset="">
+            <h3 class="gd-pink-1">Drone 5 </h3>
+            <p>desc drone 5.</p>
+            <a target="_blank" href="./">
+                <button class="button-ver">Comprar</button>
+            </a>
+            <ul>
+            </ul>
+        </div>
+        <div class="item-grid">
+            <img src="https://www.hypeness.com.br/1/2019/10/MAPFRE_Drones_3.jpg" alt="" srcset="">
+            <h3 class="gd-pink-1">Drone 6</h3>
+            <p>desc drone 5.</p>
+            <a target="_blank" href="./">
+                <button class="button-ver">Comprar</button>
+            </a>
+            <ul>
+            </ul>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var comprarButtons = document.querySelectorAll('.button-ver');
+                comprarButtons.forEach(function (button) {
+                    button.addEventListener('click', function (event) {
+                        var isOutOfStock = true;
+
+                        if (isOutOfStock) {
+                            alert('PRODUTO FORA DE ESTOQUE');
+                            event.preventDefault();
+                        }                   
+                    });
+                });
+            });
+        </script>
+    </div>
+
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        if (btnMobile) {
+            btnMobile.addEventListener('click', toggleMenu);
+        }
+
+    </script>
+
+</section>
