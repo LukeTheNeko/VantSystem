@@ -32,9 +32,6 @@
   top: 8px;
 }
 
-
-/* EFEITO HOVER */
-
 .navbar ul li a {
   padding-bottom: 10px;
   background:
@@ -57,8 +54,6 @@
 .navbar ul li a:hover {
 background-size: 0 3px, 100% 3px;
 }
-
-/* --- MEDIA QUERY --- */
 
 @media (max-width: 1200px) {
 
